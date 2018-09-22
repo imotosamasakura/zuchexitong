@@ -113,19 +113,17 @@ public class Test {
 		    			else{
 		    				System.out.println("请输入租车数量：");
 		    				String a2 = out.next();//租车的数量
-		    				if(isNumeric(a2) && Integer.parseInt(a2) >= 0){
+		    				if(isNumeric(a2) && Integer.parseInt(a2) > 0){
 		    					if(a.equals("1")){
 		    						truck.setNum(truck.getNum() + Integer.parseInt(a2));
-		    						System.out.println("操作成功，输入1继续租车，输入其他返回最初页面");
 		    					}
 		    					if(a.equals("2")){
 		    						passengercar.setNum(passengercar.getNum() + Integer.parseInt(a2));
-		    						System.out.println("操作成功，输入1继续租车，输入其他返回最初页面");
 		    					}
 		    					if(a.equals("3")){
 		    						pickup.setNum(pickup.getNum() + Integer.parseInt(a2));
-		    						System.out.println("操作成功，输入1继续租车，输入其他返回最初页面");
 		    					}
+		    					System.out.println("操作成功，输入1继续租车，输入其他返回最初页面");
 		    				}
 		    				else{
 		    					System.out.println("输入有误，输入1继续租车，输入其他返回最初页面");
